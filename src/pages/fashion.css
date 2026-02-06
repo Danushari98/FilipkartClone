@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.fashion-page {
+  padding: 40px;
+  background: #f7f8fc;
+}
+
+.fashion-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.fashion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.fashion-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.fashion-card:hover {
+  transform: translateY(-6px);
+}
+
+.fashion-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.fashion-card h3 {
+  margin: 12px 0 6px;
+  font-size: 18px;
+}
+
+.fashion-card p {
+  color: #444;
+  font-weight: bold;
+}
+
+.buy-btn {
+  margin-top: 10px;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.buy-btn:hover {
+  opacity: 0.9;
+}
+
+/* POPUP */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #fff;
+  width: 340px;
+  padding: 25px;
+  border-radius: 16px;
+  position: relative;
+  text-align: center;
+}
+
+.popup-box h2 {
+  margin-bottom: 15px;
+}
+
+.popup-box input,
+.popup-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.popup-box button {
+  width: 100%;
+  padding: 10px;
+  background: #4b6cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.popup-box button:hover {
+  background: #3a56d4;
+}
+
+.success {
+  color: green;
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}

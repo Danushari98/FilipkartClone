@@ -1,0 +1,180 @@
+/* PAGE */
+.category-page {
+  padding: 40px 6%;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #1f2937;
+}
+
+/* GRID */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.product-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.product-card p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 14px;
+}
+
+/* BUTTON */
+.buy-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.buy-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: scale(1.03);
+}
+
+/* PAYMENT OVERLAY */
+.payment-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* PAYMENT BOX */
+.payment-box {
+  background: #ffffff;
+  padding: 28px;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 14px;
+  position: relative;
+  animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.payment-box h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #1f2937;
+}
+
+.payment-box h3 {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #374151;
+}
+
+/* INPUTS */
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* CONFIRM BUTTON */
+.confirm-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  background: #16a34a;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #15803d;
+}
+
+/* CLOSE */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #374151;
+}
+
+/* SUCCESS */
+.success-popup {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #22c55e;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}

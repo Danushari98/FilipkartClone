@@ -1,0 +1,17 @@
+.track-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.status-box {
+  margin: 20px auto;
+  background: #fff;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h3 {
+  color: green;
+}

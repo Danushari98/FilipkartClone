@@ -1,0 +1,161 @@
+/* ============================
+   OVERLAY
+============================ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  font-family: Arial, sans-serif;
+}
+
+/* ============================
+   MAIN LOGIN MODAL
+============================ */
+.login-modal {
+  width: 720px;
+  height: 460px;
+  background: #fff;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* ============================
+   LEFT PANEL (BLUE)
+============================ */
+.modal-left {
+  width: 38%;
+  background: #2874f0;
+  padding: 40px 25px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-left h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.modal-left p {
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.95;
+}
+
+/* ============================
+   RIGHT PANEL
+============================ */
+.modal-right {
+  width: 62%;
+  padding: 40px 34px;
+  position: relative;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Inputs */
+.modal-input {
+  width: 100%;
+  padding: 14px 10px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+
+.modal-input:focus {
+  border-color: #2874f0;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Login Button */
+.modal-login-btn {
+  width: 100%;
+  padding: 13px;
+  background: #fb641b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal-login-btn:hover {
+  background: #e85b14;
+}
+
+/* Signup text */
+.signup-text {
+  margin-top: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
+.signup-link {
+  color: #2874f0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   ANIMATION
+============================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 768px) {
+  .login-modal {
+    flex-direction: column;
+    width: 92%;
+    height: auto;
+  }
+
+  .modal-left,
+  .modal-right {
+    width: 100%;
+  }
+}
